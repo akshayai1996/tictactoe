@@ -11,6 +11,7 @@ tictactoe_android/build/
 tictactoe_android/app/build/
 tictactoe_android/local.properties
 tictactoe_android/.idea/
+!tictactoe_android/tictactoe.apk
 
 # OS files
 .DS_Store
