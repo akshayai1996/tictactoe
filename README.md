@@ -2,18 +2,20 @@
 
 A feature-rich Tic Tac Toe game implemented in **8 different programming languages**, all sharing the same glassmorphism dark theme, minimax AI, and gameplay experience.
 
-## 🚀 Implementations
+## 🚀 Downloads & Implementations
 
-| # | Language | Framework | Directory | Executable |
-|---|----------|-----------|-----------|------------|
-| 1 | **HTML/JavaScript** | Vanilla JS | [`tictactoe_javascript/`](tictactoe_javascript/) | `tictactoe.html` |
-| 2 | **Python** | PySide6 (Qt) | [`tictactoe_python/`](tictactoe_python/) | `tictactoe.pyw` |
-| 3 | **Java** | Swing | [`tictactoe_java/`](tictactoe_java/) | `tictactoe.jar` |
-| 4 | **C#** | WPF | [`tictactoe_csharp/`](tictactoe_csharp/) | `tictactoe.exe` |
-| 5 | **Go** | Fyne | [`tictactoe_go/`](tictactoe_go/) | `tictactoe.exe` |
-| 6 | **C++** | Qt6 | [`tictactoe_cpp/`](tictactoe_cpp/) | `tictactoe.exe` |
-| 7 | **Android** | Kotlin/Jetpack Compose | [`tictactoe_android/`](tictactoe_android/) | `tictactoe.apk` |
-| 8 | **Rust** | eframe/egui | [`tictactoe_rust/`](tictactoe_rust/) | `tictactoe.exe` |
+**[All Releases](https://github.com/akshayai1996/tictactoe/releases)** | **[Latest v1.0](https://github.com/akshayai1996/tictactoe/releases/tag/v1.0)**
+
+| # | Language | Framework | Directory | Executable / Download | Requirements |
+|---|----------|-----------|-----------|-----------------------|--------------|
+| 1 | **HTML/JavaScript** | Vanilla JS | [`tictactoe_javascript/`](tictactoe_javascript/) | [`tictactoe.html`](https://github.com/akshayai1996/tictactoe/releases/download/v1.0/tictactoe.html) | Web Browser (Chrome, Edge, Firefox) |
+| 2 | **Python** | PySide6 (Qt) | [`tictactoe_python/`](tictactoe_python/) | [`tictactoe.pyw`](https://github.com/akshayai1996/tictactoe/releases/download/v1.0/tictactoe.pyw) | Python 3.6+ with `PySide6` installed |
+| 3 | **Java** | Swing | [`tictactoe_java/`](tictactoe_java/) | [`tictactoe.jar`](https://github.com/akshayai1996/tictactoe/releases/download/v1.0/tictactoe.jar) | Java Runtime Environment (JRE) 8+ |
+| 4 | **C#** | WPF | [`tictactoe_csharp/`](tictactoe_csharp/) | [`tictactoe_csharp.exe`](https://github.com/akshayai1996/tictactoe/releases/download/v1.0/tictactoe_csharp.exe) | Windows with .NET Framework 4.7.2+ |
+| 5 | **Go** | Fyne | [`tictactoe_go/`](tictactoe_go/) | [`tictactoe_go.exe`](https://github.com/akshayai1996/tictactoe/releases/download/v1.0/tictactoe_go.exe) | None (Standalone) |
+| 6 | **C++** | Qt6 | [`tictactoe_cpp/`](tictactoe_cpp/) | [`tictactoe_cpp.exe`](https://github.com/akshayai1996/tictactoe/releases/download/v1.0/tictactoe_cpp.exe) | Windows with Qt6 DLLs available |
+| 7 | **Android** | Kotlin/Jetpack Compose | [`tictactoe_android/`](tictactoe_android/) | [`tictactoe.apk`](https://github.com/akshayai1996/tictactoe/releases/download/v1.0/tictactoe.apk) | Android 8.0+ (Oreo) |
+| 8 | **Rust** | eframe/egui | [`tictactoe_rust/`](tictactoe_rust/) | [`tictactoe_rust.exe`](https://github.com/akshayai1996/tictactoe/releases/download/v1.0/tictactoe_rust.exe) | None (Standalone) |
 
 ## ✨ Features (All Versions)
 
