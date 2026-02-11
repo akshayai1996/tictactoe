@@ -4,16 +4,16 @@ A feature-rich Tic Tac Toe game implemented in **8 different programming languag
 
 ## 🚀 Implementations
 
-| # | Language | Framework | Directory |
-|---|----------|-----------|-----------|
-| 1 | **HTML/JavaScript** | Vanilla JS | [`tictactoe.html`](tictactoe.html) |
-| 2 | **Python** | PySide6 (Qt) | [`tictactoe.pyw`](tictactoe.pyw) |
-| 3 | **Java** | Swing | [`tictactoe_java/`](tictactoe_java/) |
-| 4 | **C#** | WPF | [`tictactoe_csharp/`](tictactoe_csharp/) |
-| 5 | **Go** | Fyne | [`tictactoe_go/`](tictactoe_go/) |
-| 6 | **C++** | Qt6 | [`tictactoe_cpp/`](tictactoe_cpp/) |
-| 7 | **Android** | Kotlin/Jetpack Compose | [`tictactoe_android/`](tictactoe_android/) |
-| 8 | **Rust** | eframe/egui | [`tictactoe_rust/`](tictactoe_rust/) |
+| # | Language | Framework | Directory | Executable |
+|---|----------|-----------|-----------|------------|
+| 1 | **HTML/JavaScript** | Vanilla JS | [`tictactoe_javascript/`](tictactoe_javascript/) | `tictactoe.html` |
+| 2 | **Python** | PySide6 (Qt) | [`tictactoe_python/`](tictactoe_python/) | `tictactoe.pyw` |
+| 3 | **Java** | Swing | [`tictactoe_java/`](tictactoe_java/) | `tictactoe.jar` |
+| 4 | **C#** | WPF | [`tictactoe_csharp/`](tictactoe_csharp/) | `tictactoe.exe` |
+| 5 | **Go** | Fyne | [`tictactoe_go/`](tictactoe_go/) | `tictactoe.exe` |
+| 6 | **C++** | Qt6 | [`tictactoe_cpp/`](tictactoe_cpp/) | `tictactoe.exe` |
+| 7 | **Android** | Kotlin/Jetpack Compose | [`tictactoe_android/`](tictactoe_android/) | `tictactoe.apk` |
+| 8 | **Rust** | eframe/egui | [`tictactoe_rust/`](tictactoe_rust/) | `tictactoe.exe` |
 
 ## ✨ Features (All Versions)
 
