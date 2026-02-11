@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inAnimation="@android:anim/fade_in"
+        android:outAnimation="@android:anim/fade_out">
+
+        <!-- ==================== SETTINGS PAGE ==================== -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:padding="24dp">
+
+                <!-- Title -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tic Tac Toe"
+                    android:textSize="36sp"
+                    android:textColor="@color/accent"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-medium"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginBottom="48dp" />
+
+                <!-- Card Container -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/rounded_card"
+                    android:padding="24dp">
+
+                    <!-- CHOOSE SIDE -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CHOOSE SIDE"
+                        android:textSize="11sp"
+                        android:textColor="@color/section_text"
+                        android:textStyle="bold"
+                        android:letterSpacing="0.1"
+                        android:layout_marginBottom="8dp" />
+
+                    <RadioGroup
+                        android:id="@+id/sideGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="24dp">
+
+                        <RadioButton
+                            android:id="@+id/rbX"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:text="Play as X"
+                            android:textColor="@color/text_sub"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:buttonTint="@color/accent"
+                            android:checked="true" />
+
+                        <RadioButton
+                            android:id="@+id/rbO"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:text="Play as O"
+                            android:textColor="@color/text_sub"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:buttonTint="@color/accent" />
+                    </RadioGroup>
+
+                    <!-- WHO STARTS -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="WHO STARTS?"
+                        android:textSize="11sp"
+                        android:textColor="@color/section_text"
+                        android:textStyle="bold"
+                        android:letterSpacing="0.1"
+                        android:layout_marginBottom="8dp" />
+
+                    <RadioGroup
+                        android:id="@+id/orderGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="24dp">
+
+                        <RadioButton
+                            android:id="@+id/rbYou"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:text="You"
+                            android:textColor="@color/text_sub"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:buttonTint="@color/accent"
+                            android:checked="true" />
+
+                        <RadioButton
+                            android:id="@+id/rbCPU"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:text="CPU"
+                            android:textColor="@color/text_sub"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:buttonTint="@color/accent" />
+                    </RadioGroup>
+
+                    <!-- DIFFICULTY -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DIFFICULTY"
+                        android:textSize="11sp"
+                        android:textColor="@color/section_text"
+                        android:textStyle="bold"
+                        android:letterSpacing="0.1"
+                        android:layout_marginBottom="8dp" />
+
+                    <RadioGroup
+                        android:id="@+id/diffGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="8dp">
+
+                        <RadioButton
+                            android:id="@+id/rbEasy"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:text="Easy"
+                            android:textColor="@color/text_sub"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:buttonTint="@color/accent" />
+
+                        <RadioButton
+                            android:id="@+id/rbMed"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:text="Med"
+                            android:textColor="@color/text_sub"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:buttonTint="@color/accent"
+                            android:checked="true" />
+
+                        <RadioButton
+                            android:id="@+id/rbHard"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:text="Hard"
+                            android:textColor="@color/text_sub"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:buttonTint="@color/accent" />
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <!-- Start Button -->
+                <TextView
+                    android:id="@+id/btnStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginTop="32dp"
+                    android:background="@drawable/btn_gradient"
+                    android:gravity="center"
+                    android:text="Start Game"
+                    android:textColor="@color/bg"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <!-- Sound Toggle -->
+                <TextView
+                    android:id="@+id/btnSound"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/btn_secondary"
+                    android:gravity="center"
+                    android:text="Sound: ON"
+                    android:textColor="@color/text_sub"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <!-- ==================== GAME PAGE ==================== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="20dp">
+
+            <!-- Status Label -->
+            <TextView
+                android:id="@+id/statusLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your Turn"
+                android:textSize="24sp"
+                android:textColor="@color/text_primary"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="24dp" />
+
+            <!-- 3x3 Grid -->
+            <GridLayout
+                android:id="@+id/gameGrid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="3"
+                android:rowCount="3"
+                android:layout_gravity="center">
+                <!-- Cells are added programmatically -->
+            </GridLayout>
+
+            <Space
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <!-- Play Again -->
+            <TextView
+                android:id="@+id/btnPlayAgain"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/btn_gradient"
+                android:gravity="center"
+                android:text="Play Again"
+                android:textColor="@color/bg"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <!-- Back to Settings -->
+            <TextView
+                android:id="@+id/btnBack"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/btn_secondary"
+                android:gravity="center"
+                android:text="Back to Settings"
+                android:textColor="@color/text_sub"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </ViewFlipper>
+</FrameLayout>

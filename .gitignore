@@ -1,0 +1,27 @@
+# Build outputs
+tictactoe_rust/target/
+tictactoe_cpp/build/
+tictactoe_java/out/
+tictactoe_java/*.class
+tictactoe_csharp/bin/
+tictactoe_csharp/obj/
+tictactoe_go/tictactoe_go.exe
+tictactoe_android/.gradle/
+tictactoe_android/build/
+tictactoe_android/app/build/
+tictactoe_android/local.properties
+tictactoe_android/.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# IDE
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc

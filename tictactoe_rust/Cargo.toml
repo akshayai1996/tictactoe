@@ -1,0 +1,12 @@
+[package]
+name = "tictactoe_rust"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+eframe = "0.31"
+rand = "0.8"
+
+# Hide console window on Windows release builds
+[profile.release]
+opt-level = 2

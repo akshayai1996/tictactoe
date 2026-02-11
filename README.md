@@ -1,37 +1,90 @@
-# Tic Tac Toe (Python GUI)
+# 🎮 Tic Tac Toe — Multi-Language Collection
 
-A modern, desktop-based Tic Tac Toe game built with **Python** and **PySide6 (Qt)**.
+A feature-rich Tic Tac Toe game implemented in **8 different programming languages**, all sharing the same glassmorphism dark theme, minimax AI, and gameplay experience.
 
-## Features
-- **Modern UI**: Clean, responsive interface with a dark theme.
-- **Smart AI**: Play against an AI opponent with difficulty settings (Easy, Medium, Hard).
-- **Sound Effects**: Includes sound effects for moves, diverse themes, and game over states.
-- **Zero Dependencies (Audio)**: Uses native Windows sound capabilities.
+## 🚀 Implementations
 
-## Requirements
+| # | Language | Framework | Directory |
+|---|----------|-----------|-----------|
+| 1 | **HTML/JavaScript** | Vanilla JS | [`tictactoe.html`](tictactoe.html) |
+| 2 | **Python** | PySide6 (Qt) | [`tictactoe.pyw`](tictactoe.pyw) |
+| 3 | **Java** | Swing | [`tictactoe_java/`](tictactoe_java/) |
+| 4 | **C#** | WPF | [`tictactoe_csharp/`](tictactoe_csharp/) |
+| 5 | **Go** | Fyne | [`tictactoe_go/`](tictactoe_go/) |
+| 6 | **C++** | Qt6 | [`tictactoe_cpp/`](tictactoe_cpp/) |
+| 7 | **Android** | Kotlin/Jetpack Compose | [`tictactoe_android/`](tictactoe_android/) |
+| 8 | **Rust** | eframe/egui | [`tictactoe_rust/`](tictactoe_rust/) |
 
-Before running the game, ensure you have Python installed.
+## ✨ Features (All Versions)
 
-### Install Dependencies
-You need to install `PySide6` for the GUI:
+- 🎨 **Glassmorphism Dark Theme** — Consistent premium UI across all platforms
+- 🤖 **Minimax AI** — Unbeatable computer opponent
+- 📊 **3 Difficulty Levels** — Easy, Medium, Hard
+- 🔊 **Sound Effects** — Audio feedback for moves, wins, and losses
+- ⚙️ **Customizable** — Choose your marker (X/O) and who starts
+- 🏆 **Win/Lose/Draw Detection** — With colored cell highlighting
 
+## 🎨 Theme
+
+All versions share the same dark glassmorphism color palette:
+
+| Element | Color |
+|---------|-------|
+| Background | `#020617` |
+| Card | `#0f172a` |
+| Cell | `#1e293b` |
+| Accent (Cyan) | `#22d3ee` |
+| Win (Green) | `#10b981` |
+| Lose (Red) | `#f43f5e` |
+
+## 🏗️ Building Each Version
+
+### HTML/JavaScript
+Just open `tictactoe.html` in any browser. No build required!
+
+### Python
 ```bash
 pip install PySide6
-```
-
-## How to Run
-
-Simply run the script using Python:
-
-```bash
 python tictactoe.pyw
 ```
 
-Or double-click `tictactoe.pyw` if Python is associated with `.pyw` files on your system.
+### Java
+```bash
+cd tictactoe_java
+javac TicTacToe.java
+java TicTacToe
+```
 
-## Controls
-- **Click**: Select a cell to place your marker (X or O).
-- **Settings**: Choose your marker, who goes first, and difficulty level.
-- **Restart**: Start a new game at any time.
+### C# (WPF)
+```bash
+cd tictactoe_csharp
+dotnet run
+```
 
-Enjoy the game!
+### Go
+```bash
+cd tictactoe_go
+go run .
+```
+
+### C++ (Qt6)
+```bash
+cd tictactoe_cpp
+mkdir build && cd build
+cmake .. -G Ninja
+ninja
+```
+
+### Android
+Open `tictactoe_android/` in Android Studio and build.
+
+### Rust
+```bash
+cd tictactoe_rust
+cargo build --release
+# Executable: target/release/tictactoe_rust.exe
+```
+
+## 📝 License
+
+MIT License
